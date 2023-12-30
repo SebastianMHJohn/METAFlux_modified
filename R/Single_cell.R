@@ -8,7 +8,8 @@
 #'
 #'
 #' @examples
-generate_boots <- function(celltype, n) {
+
+ generate_boots <- function(celltype, n) {
   dt <- data.frame(cluster = celltype, id = 1:length(celltype))
   index <- do.call(cbind, sapply(1:n, function(x) {
     splits <- dt %>%
